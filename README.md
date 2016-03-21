@@ -1,5 +1,5 @@
 #This is a blog
-You can find it live at [benwiley.org](http://benwiley.org/).
+You can find it live at [blog.benwiley.org](http://blog.benwiley.org/).
 
 ##How to build
 * Download and install Hugo for your system from https://github.com/spf13/hugo/releases.
