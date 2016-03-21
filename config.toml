@@ -1,0 +1,34 @@
+# baseurl = "http://blog.benwiley.org/" #uncomment for production
+builddrafts = false
+canonifyurls = true
+contentdir = "content"
+languageCode = "en-US"
+layoutdir = "layouts"
+publishdir = "public"
+author = "Ben Wiley"
+title = "Ben Wiley's Blog"
+pygmentsuseclasses = false
+disqusShortname = "benwileysblog"
+pluralizelisttitles = false
+
+[permalinks]
+fixed = ":title/"
+blog = ":slug/"
+
+[params]
+Author = "Ben Wiley"
+CacheBuster = true
+DateForm = "Jan 2, 2006"
+DateFormFull = "Mon Jan 2 2006 15:04:05 EST"
+# Description = "Don't panic"
+Email = "therealbenwiley@gmail.com"
+# FaviconFile = "img/leaf.ico" # TODO:
+# GATracker = "XYZ" # TODO:
+GitHub = "//github.com/benwiley4000"
+Initials = "bw"
+Lang = "en"
+# LinkedIn = "//linkedin.com/in/you" # TODO:
+Twitter = "//twitter.com/benwiley4000"
+ExtraCssFiles = [ "/css/override.css" ] # relative to public directory
+RootDomainName = "benwiley.org"
+RootUrl = "http://benwiley.org/"
