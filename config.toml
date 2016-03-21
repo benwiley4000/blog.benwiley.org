@@ -29,6 +29,6 @@ Initials = "bw"
 Lang = "en"
 # LinkedIn = "//linkedin.com/in/you" # TODO:
 Twitter = "//twitter.com/benwiley4000"
-ExtraCssFiles = [ "/css/override.css" ] # relative to public directory
+# ExtraCssFiles = [ "/css/override.css" ] # relative to public directory
 RootDomainName = "benwiley.org"
 RootUrl = "http://benwiley.org/"
