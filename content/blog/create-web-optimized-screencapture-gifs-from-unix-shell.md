@@ -107,7 +107,7 @@ We're finally ready to make a GIF! This time we're using ImageMagick's `convert`
 $ convert -delay 6 frames_crop_scaled/* animation.gif
 {{</highlight>}}
 
-I set the `-delay` flag's value to 6, or six tenths of a second per frame, to match the screencapture's refresh rate (60 frames per second). You can make that value smaller for a faster GIF, or larger for a slower one.
+I set the `-delay` flag's value to 6, or six hundredths of a second per frame. Flip that and do some math, and we get a framerate: 16.67 frames per second. That's pretty close to 15 frames per second --- recordMyDesktop's output framerate (so our GIF should move just a tiny bit faster than real life). You can make that value smaller for a faster GIF, or larger for a slower one.
 
 ### Optimize our GIF
 
