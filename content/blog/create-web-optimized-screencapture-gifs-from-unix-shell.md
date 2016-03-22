@@ -3,16 +3,14 @@ date = "2016-03-21T06:48:09-04:00"
 draft = false
 title = "Create Web-Optimized Screencapture GIFs from the Unix Shell"
 slug = "create-web-optimized-screencapture-gifs-from-unix-shell"
+contenttype = "article"
+image = "img/terminalscreen.jpg"
 
 +++
 
-Last week I set out to finally build myself a web portfolio on [my site](http://benwiley.org/) --- a task that has been delayed numerous times since I went more-or-less "full time" last Fall. I'm good at a few things but I'm not sure selling myself is near the top of that list. 
+Last week I set out to finally build myself a web portfolio on [my site](http://benwiley.org/) --- a task that has been delayed numerous times since I went more-or-less "full-time" last Fall. I knew I had to have screenshots, since those are one of the most important ways you can grab people's attention before they resume totally ignoring you. But it can be hard to capture the essence of a dynamic web app in a single frame.
 
-Instead I've spent my time up to now on several web-related projects, and I finally got to the point where it seemed dumb not to show some of them off. But *how*? Screenshots, it turns out, are one of the most important ways you can grab people's attention before they resume totally ignoring you, so I decided to try getting some eye-popping screengrabs from the games and apps I've worked on in the last several months.
-
-But it also turns out it's not easy to capture the appeal of a dynamic web application in a single shot --- especially when your visual design isn't the major draw. Like video games, an app's screenshots could use a few extra frames to help a viewer understand the experience of using it.
-
-So I decided to embed GIFs of my web applications into my site! But not just any GIFs. You know what's the worst? GIFs that load slowly and look bad. I knew I would need GIFs that:
+So I decided to embed GIFs of my web applications into my site! Not just any GIFs. You know what's the worst? GIFs that load slowly and look bad. I knew I would need GIFs that:
 
 * show my apps off nicely (nice image quality/minimal compression artifacts)
 * download quickly
@@ -37,11 +35,11 @@ In order to initiate screencapture, run `recordmydesktop`. Use `Alt`+`Tab` to re
 
 I capture recordings that last between one and four seconds, and I use the graphical version of recordMyDesktop. Since I don't need sound, I disable it.
 
-![recordMyDesktop running in the shell](img/gtk-recordmydesktop1.jpg)
+![GTK-recordMyDesktop](img/gtk-recordmydesktop1.jpg)
 
 **Don't stop recording with `Ctrl`+`C` if you're using the graphical version! You will lose your progress. Use the red stop button to finish recording.**
 
-![recordMyDesktop running in the shell](img/gtk-recordmydesktop2.jpg)
+![Quit GTK-recordMyDesktop by right-clicking the red stop button](img/gtk-recordmydesktop2.jpg)
 
 **On a Mac?** QuickTime Player has a [built-in function](https://support.apple.com/kb/PH5882?locale=en_US) for recording your screen.
 
@@ -123,7 +121,7 @@ $ apt-get install gifsicle
 
 Check the Gifsicle website (above) for Mac installation options, including Homebrew.
 
-We're going to limit our GIF to 256 colors, and use Gifsicle's most advanced image optimization algorithm (03).
+We're going to limit our GIF to 256 colors, and use Gifsicle's most advanced image optimization algorithm (you can try out reducing the color count even more to further reduce the file size).
 
 {{<highlight bash>}}
 $ gifsicle --colors 256 -O3 < animation.gif > animation_optimized.gif
