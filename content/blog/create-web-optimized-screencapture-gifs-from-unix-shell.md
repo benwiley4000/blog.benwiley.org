@@ -1,5 +1,5 @@
 +++
-date = "2016-03-21T06:48:09-04:00"
+date = "2016-03-21T20:48:09-04:00"
 draft = false
 title = "Create Web-Optimized Screencapture GIFs from the Unix Shell"
 slug = "create-web-optimized-screencapture-gifs-from-unix-shell"
