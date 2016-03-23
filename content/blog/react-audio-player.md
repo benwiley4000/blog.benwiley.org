@@ -150,7 +150,7 @@ If you've been following along, your directory structure should now look like th
 
 To make sure everything's working, let's render a basic React component in a web browser.
 
-First, create a new directory called `src/`, and place our `style.scss` in it. We won't be going over it, but we will need it in order for anything to show up. <a href="audioplayer.scss" download="style.scss">Download it here</a> (if you have any questions, let me know in the comments).
+First, create a new directory called `src/`, and place our `style.scss` in it. We won't be going over it, but we will need it in order for anything to show up. {{<download path="audioplayer.scss" alias="style.scss">}}Download it here{{</download>}} (if you have any questions, let me know in the comments).
 
 Next, create our `index.html` file, including a div with the `id` `audio_player_container`, into which we'll insert our React component.
 
