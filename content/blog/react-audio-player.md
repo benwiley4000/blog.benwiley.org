@@ -1,7 +1,7 @@
 +++
 contenttype = "article"
 date = "2016-03-22T20:11:59-04:00"
-draft = false
+draft = true
 image = ""
 slug = "using-react-create-audio-player-loops-through-playlists"
 title = "Using React to Create an Audio Player that Loops Through Playlists"
@@ -12,7 +12,9 @@ In a previous life I thought I would grow up to be a professional jazz musician.
 
 Pretty soon I realized others might want to use something like this in their own projects, so I spun the audio player out into a [**React**](https://facebook.github.io/react/) component module that you can now [install from npm](https://www.npmjs.com/package/react-responsive-audio-player). And while working on *that*, it occurred to me that the process of building that component could be a fun excuse for a blog post!
 
-This tutorial assumes no prior knowledge of React, the build tools we'll be using (Node.js, npm, Babel, gulp, etc.), or even CSS (though some basic knowledge will help you understand what's going on). If you have a build setup or coding style you prefer, feel free to adjust accordingly. And if you have any questions about choices that are made, feel free to ask them below in the comments!
+This tutorial assumes no prior knowledge of React, the build tools we'll be using (Node.js, npm, Babel, gulp, etc.), or even CSS (though some basic knowledge will help you understand what's going on). It *will* assume some familiarity with ES2015 JavaScript syntax, and gloss over some features you may not recognize. To learn more about ES2015, [read this](https://kadira.io/blog/other/top-es2015-features-in-15-minutes).
+
+If you have a build setup or coding style you prefer, feel free to adjust accordingly. And if you have any questions about choices that are made, feel free to ask them below in the comments!
 
 ### Contents
 
