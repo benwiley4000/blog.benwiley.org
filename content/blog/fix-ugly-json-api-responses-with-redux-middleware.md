@@ -51,3 +51,9 @@ console.log(camelize(responseData));
 If the keys in your original response are `PascalCase`, `camelize` won't be much help, but you can use a similar module called [`penrillian-camelize`](https://www.npmjs.com/package/penrillian-camelize) that adds support for converting from `PascalCase` to `camelCase`. If there's some other transform you need to apply to your keys, you can use [`recursive-json-key-transform`](https://www.npmjs.com/package/recursive-json-key-transform) (disclaimer: I published this module), which lets you specify your own function to apply to all the keys in your JSON response. You might want to check out the module [`i`](https://www.npmjs.com/package/i), which contains a collection of common string transforms that can be used in conjunction with `recursive-json-key-transform`.
 
 ### Integrating this in your app's data flow
+
+Here's an app that fetches a JSON response (actually just a pre-built JSON object that pretends to be a JSON response), and prints it to the screen. You can press 'Fetch data' to fetch, and 'Clear data' to empty the data object. As you can see, the keys in the response are `snake_cased`.
+
+<iframe src="http://benwiley4000.github.io/redux-json-request-formatting-tutorial/without_camelize.html" style="width:100%" />
+
+First, let's dive into the pieces of this app.
