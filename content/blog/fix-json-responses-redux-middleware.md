@@ -8,7 +8,7 @@ title = "Fix Ugly JSON API Responses with Redux Middleware"
 
 +++
 
-***NOTE:*** *This post uses an example Redux application, but won't go deep into explaining how Redux actually works. Check out the (top-notch) [Redux documentation](http://redux.js.org/) to get started. However you won't be expected to know [React](https://facebook.github.io/react/), which is often used with Redux applications. For rendering in this example, we just use plain JavaScript.*
+***Note:*** *This post uses an example Redux application, but won't go deep into explaining how Redux actually works. Check out the (top-notch) [Redux documentation](http://redux.js.org/) to get started. However you won't be expected to know [React](https://facebook.github.io/react/), which is often used with Redux applications. For rendering in this example, we just use plain JavaScript.*
 
 As a JavaScript app developer, you'll inevitably be handling JSON object responses from server APIs --- either your own, or someone else's. When you get lucky, the keys on those responses are already be `camelCased`. Other times, those keys may be formatted according to another convention, like `snake_case` or `PascalCase`.
 
@@ -47,7 +47,7 @@ This post is a two-parter. In part one, we're going to run through the construct
   * [A note on other JSON transformation options]({{<relref "fix-json-responses-redux-middleware.md#a-note-on-other-json-transformation-options">}})
   * [Integrating this into an app data flow]({{<relref "fix-json-responses-redux-middleware.md#integrating-this-into-an-app-data-flow">}})
   * [A working app.. without `snake_case`!]({{<relref "fix-json-responses-redux-middleware.md#a-working-app-without-snake-case">}})
-  * [Links]({{<relref "fix-json-responses-redux-middleware.md#links">}})
+* [Links]({{<relref "fix-json-responses-redux-middleware.md#links">}})
 
 ## Part I: Building the app
 
@@ -462,7 +462,7 @@ This is actually a much better solution. Since our response middleware could be 
 
 But coupling `camelize` with our response middleware can also be problematic. Say we have multiple data sources, or we don't want to apply `camelize` to every single data response? It's better if we create a new piece of middleware dedicated to applying the transformation to our response. Redux allows us to chain together as many pieces of middleware as we want before the store handles our actions, so that shouldn't be a problem.
 
-I've written a module called redux-action-transform-middleware. It's Redux middlware that can apply an arbitrary transformation to a given property on an action before the reducer receives it. In our case our data is nested at `res.data`, which is still a valid parameter.
+I've written a module called redux-action-transform-middleware. It generates Redux middleware that applies an arbitrary transformation to a specified property on an action before the reducer receives it. In our case our data is nested at `res.data`, which is still a valid parameter.
 
 In our app we can use redux-action-transform-middleware like so:
 
@@ -504,6 +504,8 @@ const store = createStore(
 /* dispatch CLEAR_DATA on 'Clear data' ... */
 {{</highlight>}}
 
+Note that it's important `responseMiddleware` is applied *before* `camelizeMiddleware`, since the response action which `camelizeMiddleware` needs to receive will be dispatched by `responseMiddleware`. If they are applied in reverse, `camelizeMiddleware` will never process the response action.
+
 If you're interested in understanding how `actionTransformMiddleware` works, you can see the full source (it's not very long) [right here](https://github.com/benwiley4000/redux-action-transform-middleware/tree/master/src/index.js).
 
 ### A working app.. without `snake_case`!
@@ -514,7 +516,7 @@ And that's it. If we run `webpack`, open our app again in a browser, and hit "Fe
 
 Questions? Comments? Feel free to leave them below!
 
-### Links
+## Links
 
 [1] [redux-json-request-formatting-tutorial on GitHub](https://github.com/benwiley4000/redux-json-request-formatting-tutorial)
 
