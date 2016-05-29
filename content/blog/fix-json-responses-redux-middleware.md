@@ -297,7 +297,7 @@ Now clicking "Fetch" will trigger a message onscreen, but then the app will stal
 
 For the request we'll use an advanced Redux feature called [middleware](http://redux.js.org/docs/advanced/Middleware.html). We apply the middleware to our store, and it will scan each action we dispatch to see if we're making a data request. If we are, it will continue dispatching our action that tells the store we're fetching, *and* after a delay, another action, carrying some made-up data.
 
-{{<highlight jsx>}}
+{{<highlight jsx "hl_lines=4 50">}}
 /* src/index.js */
 
 /* import dependencies */
@@ -466,7 +466,7 @@ I've written a module called redux-action-transform-middleware. It generates Red
 
 In our app we can use redux-action-transform-middleware like so:
 
-{{<highlight jsx>}}
+{{<highlight jsx "hl_lines=5 6 26">}}
 /* src/index.js */
 
 /* import dependencies */
