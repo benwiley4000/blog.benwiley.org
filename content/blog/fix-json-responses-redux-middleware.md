@@ -3,7 +3,7 @@ contenttype = "article"
 date = "2016-05-22T17:18:09-04:00"
 draft = false
 image = ""
-slug = "fix-ugly-json-api-responses-redux-middleware"
+slug = "fix-json-responses-redux-middleware"
 title = "Fix Ugly JSON API Responses with Redux Middleware"
 
 +++
@@ -33,7 +33,21 @@ At first this may seem like a small inconvenience. But it can become confusing t
 
 Wouldn't it be nice if you could tell your app to automatically `camelCase` all the keys in your download JSON responses? Good news --- I'm about to show you how.
 
-This post is a two-parter. In part one, we're going to run through the construction of a very basic Redux app that requests a `snake_cased` JSON response, fetches it, and displays it on the screen. In part two, we'll enhance our app to automatically convert our response to `camelCase`!
+This post is a two-parter. In part one, we're going to run through the construction of a very basic Redux app that requests a `snake_cased` JSON response, fetches it, and displays it on the screen. In part two, we'll enhance our app to automatically convert our response to `camelCase`.
+
+### Contents
+
+* [Part I: Building the app]({{<relref "fix-json-responses-redux-middleware.md#part-i-building-the-app">}})
+  * [Setting up the build environment]({{<relref "fix-json-responses-redux-middleware.md#setting-up-the-build-environment">}})
+  * [Creating our HTML]({{<relref "fix-json-responses-redux-middleware.md#creating-our-html">}})
+  * [Putting together our Redux app]({{<relref "fix-json-responses-redux-middleware.md#putting-together-our-redux-app">}})
+  * [A note on middleware]({{<relref "fix-json-responses-redux-middleware.md#a-note-on-middleware">}})
+  * [Trying out our app]({{<relref "fix-json-responses-redux-middleware.md#trying-out-our-app">}})
+* [Part II: camelCasing our data response]({{<relref "fix-json-responses-redux-middleware.md#part-ii-camelcasing-our-data-response">}})
+  * [A note on other JSON transformation options]({{<relref "fix-json-responses-redux-middleware.md#a-note-on-other-json-transformation-options">}})
+  * [Integrating this into an app data flow]({{<relref "fix-json-responses-redux-middleware.md#integrating-this-into-an-app-data-flow">}})
+  * [A working app.. without `snake_case`!]({{<relref "fix-json-responses-redux-middleware.md#a-working-app-without-snake-case">}})
+  * [Links]({{<relref "fix-json-responses-redux-middleware.md#links">}})
 
 ## Part I: Building the app
 
