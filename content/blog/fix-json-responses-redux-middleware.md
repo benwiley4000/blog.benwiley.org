@@ -31,7 +31,7 @@ As a JavaScript app developer, you'll inevitably be handling JSON object respons
 
 At first this may seem like a small inconvenience. But it can become confusing to juggle variables names with the wrong casing style, especially if you've already ascribed a different meaning to variables with that style (for example, `PascalCase` variables normally refer exclusively to class names in a JavaScript app).
 
-Wouldn't it be nice if you could tell your app to automatically `camelCase` all the keys in your download JSON responses? Good news --- I'm about to show you how.
+Wouldn't it be nice if you could tell your app to automatically `camelCase` all the keys in your downloaded JSON responses? Good news --- I'm about to show you how.
 
 This post is a two-parter. In part one, we're going to run through the construction of a very basic Redux app that requests a `snake_cased` JSON response, fetches it, and displays it on the screen. In part two, we'll enhance our app to automatically convert our response to `camelCase`.
 
@@ -412,7 +412,7 @@ If the keys in your original response are `PascalCase`, camelize won't be much h
 
 ### Integrating this into an app data flow
 
-In our app, there's not necessarily an obvious place to use `camelize` if want to use it to transform our data responses. We know the data in our state needs to be `camelCased`, so one option would be to use `camelize` inside of our reducer as we update our state.
+In our app, there's not necessarily an obvious place to use `camelize` if we want to use it to transform our data responses. We know the data in our state needs to be `camelCased`, so one option would be to use `camelize` inside of our reducer as we update our state.
 
 {{<highlight jsx>}}
 /* example */
