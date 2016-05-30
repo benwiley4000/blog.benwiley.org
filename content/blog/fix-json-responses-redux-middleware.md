@@ -10,7 +10,7 @@ title = "Fix Ugly JSON API Responses with Redux Middleware"
 
 ***Note:*** *This post uses an example Redux application, but won't go deep into explaining how Redux actually works. Check out the (top-notch) [Redux documentation](http://redux.js.org/) to get started. However you won't be expected to know [React](https://facebook.github.io/react/), which is often used with Redux applications. For rendering in this example, we just use plain JavaScript.*
 
-As a JavaScript app developer, you'll inevitably be handling JSON object responses from server APIs --- either your own, or someone else's. When you get lucky, the keys on those responses are already be `camelCased`. Other times, those keys may be formatted according to another convention, like `snake_case` or `PascalCase`.
+As a JavaScript app developer, you'll inevitably be handling JSON object responses from server APIs --- either your own, or someone else's. When you get lucky, the keys on those responses are already `camelCased`. Other times, those keys may be formatted according to another convention, like `snake_case` or `PascalCase`.
 
 {{<highlight json>}}
 {
