@@ -1,7 +1,7 @@
-#This is a blog
+# This is a blog
 You can find it live at [blog.benwiley.org](http://blog.benwiley.org/).
 
-##How to build
+## How to build
 * Download and install Hugo for your system from https://github.com/spf13/hugo/releases.
 
 * Install the theme by running install_theme.sh, or by running:
