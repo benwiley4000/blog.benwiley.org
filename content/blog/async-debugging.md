@@ -36,8 +36,9 @@ async function getTrackOne() {
   const track = await fetchSongFromAlbum(album, 0);
   return track;
 }
-const track = await getTrackOne();
-console.log(track);
+getTrackOne().then(track =>{
+  console.log(track);
+});
 {{</highlight>}}
 
 Many people find the second version much clearer to read - especially those coming to JavaScript from languages like Java, C# and Python where passing one function into another function isn't a daily occurrence (much less passing a function that will be run *sometime later*).
