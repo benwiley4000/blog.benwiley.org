@@ -4,7 +4,7 @@ draft = false
 title = "Create Web-Optimized Screencapture GIFs from the Unix Shell"
 slug = "create-web-optimized-screencapture-gifs-from-unix-shell"
 contenttype = "article"
-image = "img/terminalscreen.jpg"
+image = "/img/terminalscreen.jpg"
 
 +++
 

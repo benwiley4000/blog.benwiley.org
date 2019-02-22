@@ -2,7 +2,7 @@
 contenttype = "article"
 date = "2016-05-22T17:18:09-04:00"
 draft = false
-image = "img/camel_snake_case.jpg"
+image = "/img/camel_snake_case.jpg"
 slug = "fix-json-responses-redux-middleware"
 title = "Fix Ugly JSON API Responses with Redux Middleware"
 
