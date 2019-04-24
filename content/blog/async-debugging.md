@@ -4,7 +4,7 @@ date = "2019-02-21T23:18:09-04:00"
 draft = false
 image = "/img/async_debugging.png"
 slug = "async-debugging"
-title = "Async/await in JavaScript: Not as dumb as I thought"
+title = "Async/Await in JavaScript: Not as Dumb as I Thought"
 
 +++
 
