@@ -8,6 +8,8 @@ title = "How to Hit the Ground Running Building Media Players with Cassette and 
 
 +++
 
+TODO TODO: add stuff about screenshots and mobile system integration in beginning when we talk about what Cassette brings out of the box!!!!!!!!!!!!!!!!!!!!!!
+
 [Cassette](https://github.com/benwiley4000/cassette) (just released in beta!) is a React component library that helps build media player applications for web browsers. It's meant to combine ease-of-onramp and a solid default end-user experience with a powerful degree of flexibility. You get a totally-functional video/audio player component from the start, but you're able to implement your own controls and eventually maybe even decide to throw all the default UI away and create your own (or use them in combination). Cassette is flexible enough to help you build apps like Netflix, Soundcloud, YouTube, Vimeo, Spotify, Facebook video... all with the same API!
 
 It's kind of hard to imagine what Cassette can do without just seeing it in action, so here we go!
