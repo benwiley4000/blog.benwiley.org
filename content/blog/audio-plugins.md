@@ -35,6 +35,8 @@ With those constraints in mind, I was ready to do some research.
 
 Building a usable and secure plugins system for the web isn't the simplest task, but there is some prior work. One of the best prior studies is [Figma's](https://www.figma.com/blog/how-we-built-the-figma-plugin-system/), and although I recommend reading their blog post, I can summarize by saying that they [eventually chose to run their plugins inside of iframes](https://www.figma.com/blog/an-update-on-plugin-security/).
 
+### My approach
+
 I ended up deciding iframes were a pretty good fit for me as well. Although I didn't need my plugins to render anything like Figma plugins do, I did appreciate the security benefits, such as:
 
 - Iframes can be prevented from accessing Local Storage or IndexedDB of the parent context, via [sandboxing](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#sandbox). This is important for me because I store all user data with IndexedDB.
