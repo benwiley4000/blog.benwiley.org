@@ -8,7 +8,7 @@ title = "What I learned building an audio plugins system for the web"
 
 +++
 
-About a month ago I released an app I'd been working on for awhile, [Volca Sampler](https://volcasampler.com/), and it got some pretty good feedback. If you visit the app you might be a bit confused, but among the niche group of folks who own a [KORG volca sample](https://www.korg.com/caen/products/dj/volca_sample/) hardware sample synthesizer, this app has been very well-received. It embeds KORG's open-source C library for transferring audio data to the volca sample, making it much easier to load one's own sounds onto the device.
+About a month ago I released an app I'd been working on for awhile, [Volca Sampler](https://volcasampler.com/). If you visit the app you might be a bit confused, but among the niche group of folks who own a [KORG volca sample](https://www.korg.com/caen/products/dj/volca_sample/) hardware sample synthesizer, this app has been very well-received. It embeds KORG's open-source C library for transferring audio data to the volca sample, making it much easier to load one's own sounds onto the device.
 
 ![Volca Sampler](/img/volca-sampler.png)
 
