@@ -34,7 +34,7 @@ Lang = "en"
 ExtraCssFiles = [ "/css/override.css" ] # relative to public directory
 RootDomainName = "benwiley.org"
 RootUrl = "http://benwiley.org/"
-absLangURL = "http://blog.benwiley.org/"
+BlogUrl = "http://blog.benwiley.org/"
 
 [blackfriday]
 plainIDAnchors = true
