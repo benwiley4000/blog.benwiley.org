@@ -60,7 +60,7 @@ One avenue I considered to minimize the issues above was to run plugins inside o
 
 However, by running inline Web Workers inside of an iframe, we inherit the iframe's security features.
 
-Web Workers can bring the following benefits:
+Web Workers bring the following benefits:
 
 - Because array buffers can be transferred from main thread to web worker with almost zero cost, the additional data copying latency is minimal.
 - Web Workers each run on their own separate thread, so more plugins can run in less time, and they don't block one another.
