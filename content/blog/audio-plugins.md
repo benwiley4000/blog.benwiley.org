@@ -56,7 +56,7 @@ Despite the advantages listed above, I did run into some gotchas:
 
 ### Possible alternative: Web Workers
 
-One avenue I considered to minimize the issues above was to run plugins inside of [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers). Web Workers on their own don't have all the same security features as iframes, and by default, they have network access and can access IndexedDb - things we *don't* want.
+One avenue I considered to minimize the issues above was to run plugins inside of [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers). Web Workers on their own don't have all the same security features as iframes, and by default, they have network access and can access IndexedDB - things we *don't* want.
 
 However, by running inline Web Workers inside of an iframe, we inherit the iframe's security features.
 
