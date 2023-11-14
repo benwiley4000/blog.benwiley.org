@@ -49,13 +49,7 @@ What I haven't been excited over is the hype that has led to folks compiling `as
 
 I'm definitely super late to the party. But yesterday I discovered something that `async` functions allow that you really *can't* do with callback functions, and that is using a browser debugger to step through an `async` function, one line at a time, the same way you would a synchronous function:
 
-<video
-  style="max-width: 100%"
-  src="/video/async_debugging.mp4"
-  muted
-  autoplay
-  loop
->
+{{< loopvideo src="/video/async_debugging.mp4" >}}
 
 Finding what went wrong in an asynchronous routine can be hard in JavaScript. Being able to place a single `debugger;` statement at the top of an `async` function and then step through each task until you find the problem in your code makes debugging a breeze. With callback functions it's difficult to trace cause-and-effect between async task definition and execution, and you also have to deal with problems like missing values from outer scopes because the debugger decided to forget them. Despite all my prior apprehensions I now want to write `async` functions wherever I can.
 

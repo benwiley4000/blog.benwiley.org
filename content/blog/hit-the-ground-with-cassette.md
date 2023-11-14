@@ -1,7 +1,7 @@
 +++
 contenttype = "article"
 date = "2019-04-24T10:08:17-04:00"
-draft = false
+draft = true
 image = "/img/async_debugging.png"
 slug = "async-debugging"
 title = "How to Hit the Ground Running Building Media Players with Cassette and React"

@@ -31,15 +31,15 @@ $ apt-get install recordmydesktop gtk-recordmydesktop
 
 In order to initiate screencapture, run `recordmydesktop`. Use `Alt`+`Tab` to return to the terminal window when finished, and press `Ctrl`+`C` to stop capturing and begin encoding. The longer you record, the longer encoding lasts (and it can last awhile), so plan shots before recording!
 
-![recordMyDesktop running in the shell](img/recordmydesktop3.jpg)
+![recordMyDesktop running in the shell](/img/recordmydesktop3.jpg)
 
 I capture recordings that last between one and four seconds, and I use the graphical version of recordMyDesktop. Since I don't need sound, I disable it.
 
-![GTK-recordMyDesktop](img/gtk-recordmydesktop1.jpg)
+![GTK-recordMyDesktop](/img/gtk-recordmydesktop1.jpg)
 
 **Don't stop recording with `Ctrl`+`C` if you're using the graphical version! You will lose your progress. Use the red stop button to finish recording.**
 
-![Quit GTK-recordMyDesktop by right-clicking the red stop button](img/gtk-recordmydesktop2.jpg)
+![Quit GTK-recordMyDesktop by right-clicking the red stop button](/img/gtk-recordmydesktop2.jpg)
 
 **On a Mac?** QuickTime Player has a [built-in function](https://support.apple.com/kb/PH5882?locale=en_US) for recording your screen.
 
@@ -75,7 +75,7 @@ ImageMagick comes with a tool called `mogrify` that is able to powerfully batch-
 
 I need to open one of my frames up in an image editor like [GIMP](https://www.gimp.org/downloads/) so I can find the X and Y coordinates of the top-left corner of my capture area.
 
-![Finding crop coordinates in GIMP](img/clusterjunkcrop.jpg)
+![Finding crop coordinates in GIMP](/img/clusterjunkcrop.jpg)
 
 Once I find those coordinates, I copy all my frames to a fresh directory (to be safe) and then crop them all in place:
 
@@ -127,7 +127,7 @@ We're going to limit our GIF to 256 colors, and use Gifsicle's most advanced ima
 $ gifsicle --colors 256 -O3 < animation.gif > animation_optimized.gif
 {{</highlight>}}
 
-![Optimized, finished GIF](img/clusterjunk_optimized.gif)
+![Optimized, finished GIF](/img/clusterjunk_optimized.gif)
 
 Boom --- a web-optimized GIF!
 

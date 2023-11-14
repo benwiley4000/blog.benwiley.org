@@ -2,11 +2,12 @@
 You can find it live at [blog.benwiley.org](http://blog.benwiley.org/).
 
 ## How to build
-* Download and install Hugo for your system from https://github.com/spf13/hugo/releases.
 
-* Install the theme by running install_theme.sh, or by running:
-```
-git clone https://github.com/benwiley4000/cocoa-hugo-theme.git themes/cocoa
-```
+* Install Hugo https://gohugo.io/installation
 
-* Finally, build the site by running `hugo -t cocoa`.
+* Git clone this repo recursively to install submodules
+
+* `hugo server` for dev server
+
+* `hugo` to build
+

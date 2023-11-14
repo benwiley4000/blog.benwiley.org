@@ -1,12 +1,14 @@
 # baseurl = "http://blog.benwiley.org/" #uncomment for production
+languageCode = "en-ca"
+title = "Ben Wiley's blog"
+theme = "PaperMod"
+
 builddrafts = false
 canonifyurls = true
 contentdir = "content"
-languageCode = "en-US"
 layoutdir = "layouts"
 publishdir = "public"
 author = "Ben Wiley"
-title = "Ben Wiley's Blog"
 pygmentsuseclasses = false
 disqusShortname = "benwileysblog"
 pluralizelisttitles = false
@@ -26,9 +28,8 @@ Email = "therealbenwiley@gmail.com"
 GATracker = "UA-75344283-1"
 GitHub = "//github.com/benwiley4000"
 Initials = "bw"
-Lang = "en"
 # LinkedIn = "//linkedin.com/in/you" # TODO:
-Twitter = "//twitter.com/benwiley4000"
+# Twitter = "//twitter.com/benwiley4000"
 ExtraCssFiles = [ "/css/override.css" ] # relative to public directory
 RootDomainName = "benwiley.org"
 RootUrl = "http://benwiley.org/"
